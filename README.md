@@ -23,3 +23,14 @@ CTRL + K -> deleta a linha em que o cursor está
 ALT + seta para cima/baixo -> move a linha para cima/baixo
 
 SHIFT + ALT + A -> comenta o código selecionado
+
+
+VS-Code Settings
+
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
