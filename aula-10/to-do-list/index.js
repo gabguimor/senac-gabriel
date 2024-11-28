@@ -38,7 +38,7 @@ function createTask(taskContent) {
   // botão de excluir a tarefa
   const deleteButton = document.createElement("button");
   deleteButton.classList.add("delete-btn");
-  deleteButton.textContent = "Delete";
+  deleteButton.innerHTML = '<i class="ph ph-trash"></i> Delete';
 
   deleteButton.addEventListener("click", function () {
     tasksContainer.removeChild(taskDiv);
