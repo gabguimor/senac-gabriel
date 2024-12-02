@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #1e7a9b;
+  --black-box: #414141;
+  --black-50: #73737381;
+  --gray: #baacac;
+  --gray-strong: #677276;
+  --font-inter: "Inter", sans-serif;
+  --font-krona: "Krona One", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Krona One", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(assets/background-image.webp) top/cover no-repeat;
+
+  color: #ffffff;
+  width: 100%;
+  height: 10rem;
+}
+
+header img {
+  margin-left: 2.5rem;
+  width: 10.5rem;
+  height: 4.8rem;
+}
+.top-img-logo {
+  visibility: hidden;
+  padding: 0;
+}
+.name {
+  display: flex;
+  justify-items: flex-start;
+  margin-bottom: 4rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-right: 1rem;
+}
+
+.links {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.links:hover {
+  border: 1px #ffffff;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  color: var(--blue);
+  border-radius: 0.8rem;
+}
+
+body {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #414141;
+}
+.login-box {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-50);
+  width: 32.7rem;
+  border-radius: 1.2rem;
+}
+
+.logo-img {
+  margin-top: 3.2rem;
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 1.1rem;
+}
+
+.data-login {
+  width: 100%;
+  height: 100%;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.data-login p {
+  color: #ffffff;
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+}
+
+.data-login input {
+  width: 100%;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2.4rem;
+}
+#password {
+  margin-bottom: 1.2rem;
+}
+.remember {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4.8rem;
+  color: #ffffff;
+}
+
+#checkbox {
+  margin-bottom: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-btn {
+  border: none;
+  background-color: #1e7a9b;
+  width: 28rem;
+  height: 4.8rem;
+  color: #ffffff;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
+  font-family: "Krona One", sans-serif;
+  cursor: pointer;
+}
+.login-btn:hover {
+  font-size: large;
+}
+
+.remember-password {
+  font-family: "Inter", sans-serif;
+  font: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: #ffffff;
+}
+
+.offline-btn {
+  width: 8.6rem;
+  height: 2.4rem;
+  border: none;
+  background-color: #1e7a9b;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  font-family: "Krona One", sans-serif;
+  margin-bottom: 2.2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 1085px) {
+  body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+      url(assets/background-image.webp) top/cover;
+    height: 100vh;
+  }
+  header {
+    display: flex;
+    background: none;
+    width: 121rem;
+    height: 15rem;
+    flex-direction: column;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    margin-top: -3rem;
+  }
+  .top-img-logo {
+    width: 7rem;
+    height: 7rem;
+    visibility: visible;
+  }
+  .name {
+    width: 15rem;
+    height: 13rem;
+    margin-top: 5rem;
+  }
+  .logo {
+    width: 8.2rem;
+    height: 8rem;
+  }
+  header ul {
+    font-size: 2rem;
+    gap: 5rem;
+  }
+}

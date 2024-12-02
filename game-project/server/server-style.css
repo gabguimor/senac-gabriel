@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.392),
+      rgba(0, 0, 0, 0.756)
+    ),
+    url(../assets/server.webp) top/cover no-repeat;
+  height: 100vh;
+}
+
+:root {
+  --blue: #1e7a9b;
+  --black-box: #414141;
+  --black-50: #73737381;
+  --gray: #baacac;
+  --gray-strong: #677276;
+  --font-inter: "Inter", sans-serif;
+  --font-krona: "Krona One", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Krona One", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15% auto;
+  background-color: var(--black-50);
+  border-radius: 0.8rem;
+}
+
+.content img {
+  width: 6rem;
+  height: 6rem;
+  margin-top: 1.3rem;
+}
+
+.content p {
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-left: 10%;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.servers {
+  width: 80%;
+  height: 20rem;
+  background-color: var(--black-box);
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+  border: 0.2rem solid #1e7a9b;
+}
+.server-list {
+  list-style: none;
+  padding: 0;
+}
+
+.server-select {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between; /* Espaça os itens entre si */
+  align-items: center; /* Alinha verticalmente no centro */
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem; /* Ajusta o espaçamento interno */
+}
+
+.server-select span {
+  flex: 1; /* Cada span ocupa espaço conforme necessário */
+  text-align: left; /* Alinha o primeiro span à esquerda */
+}
+
+.server-select span:last-child {
+  text-align: right; /* Alinha o status à direita */
+}
+
+.login-btn {
+  border-style: none;
+  background-color: #1e7a9b;
+  color: #ffffff;
+  font: var(--font-krona);
+  padding: 0.8rem 6rem;
+  font-size: 1.5rem;
+  border-radius: 0.6rem;
+  margin: 1rem auto 2.5rem;
+  cursor: pointer;
+}
+.login-btn:hover {
+  font-size: large;
+}
+
+.back-btn {
+  display: flex;
+  justify-self: center;
+  border-style: none;
+  background-color: #1e7a9b;
+  color: #ffffff;
+  font: var(--font-krona);
+  border-radius: 0.6rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.back-btn:hover {
+  font-size: large;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 950px) {
+  .content {
+    margin: auto 35%;
+  }
+}
