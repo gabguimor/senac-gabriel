@@ -80,14 +80,22 @@ input {
 
 #date {
   font-family: var(--font-inter);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
 }
 
-#like {
+.ph-heart {
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: color 0.3s ease, stroke 0.3s ease;
+}
+
+.ph-fill {
   color: #1e7a9b;
+  fill: #1e7a9b;
+  transition: color 0.3s ease, stroke 0.3s ease;
 }
 
 h2 {
