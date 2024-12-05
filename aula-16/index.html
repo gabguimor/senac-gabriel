@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="profile-card flex">
+      <div class="image">
+        <img
+          src="https://github.com/gabguimor.png"
+          alt=""
+          class="profile-image"
+        />
+      </div>
+
+      <div class="text-data flex">
+        <h1 class="name" id="name"></h1>
+        <p class="bio" id="bio"></p>
+      </div>
+
+      <ul class="media-buttons flex">
+        <li class="link flex" id="facebook">
+          <a href="https://facebook.com/" target="_blank" class="flex">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+        </li>
+        <li class="link flex" id="twitter">
+          <a href="" target="_blank" class="flex">
+            <i class="ph ph-x-logo"></i>
+          </a>
+        </li>
+        <li class="link flex" id="instagram">
+          <a href="https://instagram.com/" target="_blank" class="flex">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+        </li>
+        <li class="link flex" id="youtube">
+          <a href="" target="_blank" class="flex">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="contact-buttons flex">
+        <button type="button">Website</button>
+        <button type="button">Message</button>
+      </div>
+
+      <ul class="analytics flex">
+        <li class="data flex">
+          <i class="ph ph-heart"></i>
+          <span id="followers"></span>
+        </li>
+        <li class="data flex">
+          <i class="ph ph-archive"></i> <span id="repos"></span>
+        </li>
+        <li class="data flex">
+          <i class="ph ph-git-pull-request"> </i>
+          <span id="gists"></span>
+        </li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
