@@ -1,0 +1,66 @@
+:root {
+  --main-font: "Roboto Mono", monospace;
+  --font-sec: "Road Rage", sans-serif;
+  --primary: #1b1b1b;
+  --primary-500: #242424;
+  --secondary-color: #fcc26b;
+  --second-gray: #868686;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 7rem;
+  margin-bottom: 6.5rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-icons {
+  border: 1px solid green;
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Road Rage", sans-serif;
+}
+
+h2 {
+  font-family: "Rock Salt", cursive;
+}
+.main-content {
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 7.3rem;
+  font-weight: 400;
+}
+
+.main-content h1 {
+  color: var(--second-gray);
+}
