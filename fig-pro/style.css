@@ -54,13 +54,104 @@ h2 {
 }
 .main-content {
   text-align: center;
+  margin: auto 3rem;
 }
 
 .main-content h1 {
+  color: var(--primary);
   font-size: 7.3rem;
   font-weight: 400;
 }
 
-.main-content h1 {
+.main-content h1 span {
   color: var(--second-gray);
+  display: block;
+  margin-bottom: -3rem;
+}
+
+.main-content h2 {
+  color: var(--secondary-color);
+  margin-top: -3.8rem;
+  font-size: 2.4rem;
+}
+
+.main-content p {
+  font-family: "Roboto Mono", monospace;
+  color: #868686;
+  margin-bottom: 3rem;
+}
+
+.main-content .let-go p {
+  font-family: "Road Rage", sans-serif;
+  font-size: 4rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .let-go p img {
+  width: 3rem;
+  height: auto;
+  margin-left: 8px;
+}
+
+.main-content img {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.users-icons {
+  display: flex;
+}
+
+.users-icons img {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid #fcc26b;
+  border-radius: 50%;
+  margin-left: -0.7rem;
+}
+
+.users p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+
+.sticker-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 1.5rem;
+}
+
+.sticker-info p {
+  font: 400 1.4rem "Roboto Mono", monospace;
+  margin: auto 5rem;
+}
+
+.sticker-info img {
+  width: 12.1rem;
+  height: auto;
+  align-self: flex-start;
+  margin-top: 2.3rem;
+  margin-bottom: -7.5rem;
+}
+
+.sticker-data {
+  background-color: #fcc26b;
+  width: 35rem;
+  height: 45rem;
 }
