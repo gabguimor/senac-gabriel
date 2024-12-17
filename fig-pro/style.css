@@ -22,7 +22,7 @@ html {
 }
 
 header {
-  border: 1px solid red;
+ 
   margin: auto;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ ul {
 }
 
 .header-icons {
-  border: 1px solid green;
+ 
   width: 6rem;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ h2 {
 }
 .main-content {
   text-align: center;
-  margin: auto 3rem;
+ 
 }
 
 .main-content h1 {
@@ -78,7 +78,7 @@ h2 {
 .main-content p {
   font-family: "Roboto Mono", monospace;
   color: #868686;
-  margin-bottom: 3rem;
+  margin: auto 6rem;
 }
 
 .main-content .let-go p {
@@ -148,10 +148,179 @@ h2 {
   align-self: flex-start;
   margin-top: 2.3rem;
   margin-bottom: -7.5rem;
+  position: relative; /* Garante que o z-index funcione corretamente */
+  z-index: 10; /* Coloca a imagem na frente */
 }
 
 .sticker-data {
-  background-color: #fcc26b;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  background-color: #fcc26b; /* Fundo interno da área */
   width: 35rem;
   height: 45rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 1rem; /* Espaçamento interno */
+  z-index: 1; /* Garante que a imagem está acima */
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 7.2rem;
+  
+}
+
+.sticker-data::before {
+  content: '';
+  position: absolute; 
+  top: -1rem;
+  left: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  border: 2px solid #fcc26b;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.sticker-data span{
+ font-family: "Road Rage";
+ font-size: 8rem;
+ font-weight: 400;
+ color: #ffff;
+}
+
+.sec-containt {
+  background-color: #F8F8F8;
+  display: flex;
+ 
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  gap: 1.5rem;
+
+}
+
+.sec-containt p {
+  margin: auto 10%;
+  color: var(--second-gray);
+  font-size: 1.3rem;
+}
+
+.sec-containt button{
+  all: unset;
+  background-color: #fcc26b;
+  text-align: center;
+  padding: 1.1rem 3.5rem;
+  font-size: 2.2rem;
+  font-family: "Road Rage";
+  margin: 7rem auto;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories h2{
+  font-family: "Roboto Mono";
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #868686;  
+}
+
+.stories span {
+  color: #fcc26b;
+}
+
+.stories h1 {
+  font-size: 14rem;
+  text-transform: uppercase;
+}
+.stories img {
+  margin-top: -12rem;
+  width: 24rem;
+  height: auto;
+  margin-bottom: 3.4rem;
+}
+
+.stories p {
+  font-family: "Roboto Mono";
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1B1B1B;
+  margin: auto 2rem;
+}
+
+#arrow{
+  
+  display: flex;
+  justify-self: center;
+}
+
+.third-content h2 {
+  color: #fcc26b;
+  font-family: "Rock Salt";
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: -5rem;
+}
+
+.third-content h1{
+
+  font-size: 12rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.grid-cards{
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(9, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #0000;
+}
+
+.grid-cards img{
+  display: flex;
+  justify-self: center;
+  margin-bottom: -15rem;
+}
+
+.grid-cards h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  
+}
+
+.grid-cards p{
+  font-family: "Roboto Mono";
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #5D5D5D;
+  text-align: center;
+  margin: auto 2rem;
+}
+
+.cards-info{
+  background-color: #D9D9D9;
+  margin: auto 2rem;
+  border-radius: 2rem;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  border: 0.2rem solid #fcc26b;
+  margin-bottom: 5rem;
+}
+
+.card-icons{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  
 }
